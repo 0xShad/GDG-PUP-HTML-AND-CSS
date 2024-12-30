@@ -1,285 +1,320 @@
-/* General Reset */
-/* Step 1: Reset default margins, padding, and box sizing for all elements */
 * {
-  /* margin: ; 
-    padding: ; 
-    box-sizing: ; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #f2f2f2;
 }
 
-/* Step 2: Set global styles for the body */
+html,
 body {
-  /* font-family: ; 
-    line-height: ; 
-    color: ; 
-    background-color: ; 
-    scroll-behavior: ; */
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Navigation Bar Styling */
-/* Step 3: Navigation Bar Styles */
-.navbar {
-  /* background-color: ; 
-    color: ; 
-    padding: ; 
-    box-shadow: ; */
+main {
+  flex: 1;
 }
 
-/* Step 4: Navbar Container Styles */
-.navbar--container {
-  /* display: ; 
-    justify-content: ; 
-    align-items: ; 
-    max-width: ; 
-    margin: ; */
+body {
+  background: #121212;
 }
 
-/* Step 5: Logo Container Styles */
-.logo-container {
-  /* display: ; 
-    align-items: ; 
-    gap: ; */
+header {
+  background-color: #1f1f1f;
+  padding: 10px;
+  width: 100%;
+  height: 10.5rem;
 }
 
-/* Step 6: Logo Image Styles */
-.logo-img-container img {
-  /* width: ; 
-    height: ; 
-    border-radius: ; 
-    object-fit: ; */
+header nav {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Step 7: Logo Text Styles */
-.logo-container p {
-  /* font-size: ; 
-    font-weight: ; 
-    color: ; */
+header nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
 }
 
-/* Step 8: Navigation Links Container Styles */
-.nav-links-container {
-  /* display: ; 
-    gap: ; 
-    list-style: ; */
+header nav .logo img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
 
-/* Step 9: Navigation Link Styles */
-.nav-links-container a {
-  /* color: ; 
-    text-decoration: ; 
-    font-weight: ; 
-    transition: ; */
+header nav .logo span {
+  font-size: 1.5rem;
+  color: orange;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-/* Step 10: Navigation Link Hover Styles */
-.nav-links-container a:hover {
-  /* color: ; */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Header Banner Styling */
-/* Step 11: Header Banner Container Styles */
-.header-banner-container {
-  /* background: ; 
-    color: ; 
-    text-align: ; 
-    padding: ; 
-    border-radius: ; */
+.nav-links li {
+  list-style: none;
 }
 
-/* Step 12: Header Banner Heading Styles */
-.header-banner-container h1 {
-  /* font-size: ; 
-    font-weight: ; 
-    margin-bottom: ; */
+.nav-links li a {
+  text-decoration: none;
+  color: #f2f2f2;
 }
 
-/* Step 13: Header Banner Paragraph Styles */
-.header-banner-container p {
-  /* font-size: ; 
-    max-width: ; 
-    margin: ; 
-    line-height: ; */
+.hero {
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to right, #72bc5d, #89bf4d, #a2c23c, #bcc32a, #d8c218, #ddc317, #e3c515, #e8c614, #d7cb22, #c7ce30, #b6d23f, #a6d44d);
+  border-radius: 10px;
 }
 
-/* Main Section */
-/* Step 14: Main Content Container Styles */
-.main {
-  /* display: ; 
-    flex-wrap: ; 
-    gap: ; 
-    max-width: ; 
-    margin: ; 
-    padding: ; */
+.hero h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-/* Step 15: Blog Post Container Styles */
-.main-posts {
-  /* flex: ; 
-    display: ; 
-    flex-direction: ; 
-    gap: ; */
+.hero p {
+  font-size: .9rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-align: center;
 }
 
-/* Step 16: Individual Blog Post Styles */
-.main-posts article {
-  /* display: ; 
-    background-color: ; 
-    border: ; 
-    border-radius: ; 
-    overflow: ; 
-    box-shadow: ; */
+.content-container {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-/* Step 17: Blog Post Image Styles */
-.main-posts article img {
-  /* width: ; 
-    height: ; 
-    object-fit: ; */
+.article-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-/* Step 18: Blog Post Content Container Styles */
-.main-posts article div {
-  /* padding: ; */
+.post-1,
+.post-2 {
+  display: flex;
+  flex-direction: column;
+  background: #1f1f1f;
+  border: 1px solid #3b3b3b;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Step 19: Blog Post Heading Styles */
-.main-posts h2 {
-  /* font-size: ; 
-    color: ; 
-    margin-bottom: ; */
+.post-content {
+  padding: 5px 10px;
 }
 
-/* Step 20: Blog Post Metadata Styles */
-.post-meta {
-  /* font-size: ; 
-    color: ; 
-    margin-bottom: ; */
+.post-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
 }
 
-/* Sidebar Styling */
-/* Step 21: Sidebar Container Styles */
+.post-header h2 {
+  font-size: 1rem;
+  padding: 10px;
+  color: #3e80e1;
+  text-align: center;
+}
+
+.post-header span {
+  font-size: 0.8rem;
+  color: #988581;
+  text-align: center;
+}
+
+.post-caption p {
+  font-size: 0.9rem;
+  padding: 10px;
+  text-align: center;
+}
+
+.post-1 img,
+.post-2 img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+aside {
+  padding: 12px;
+  background: #1f1f1f;
+  border-radius: 10px;
+  border: 1px solid #3b3b3b;
+}
+
+.sidebar-heading {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: rgba(253, 187, 45, 1);
+}
+
 .sidebar {
-  /* flex: ; 
-    background-color: ; 
-    border: ; 
-    border-radius: ; 
-    padding: ; 
-    box-shadow: ; */
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 }
 
-/* Step 22: Sidebar Heading Styles */
-.sidebar h3 {
-  /* color: ; 
-    margin-bottom: ; */
+.sidebar-item {
+  display: flex;
+  gap: 10px;
 }
 
-/* Step 23: Popular Post Container Styles */
-.popular-post {
-  /* display: ; 
-    align-items: ; 
-    margin-bottom: ; */
+.sidebar-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
 }
 
-/* Step 24: Popular Post Image Styles */
-.popular-post img {
-  /* width: ; 
-    height: ; 
-    border-radius: ; 
-    object-fit: ; 
-    margin-right: ; */
+.sidebar-item p {
+  font-size: 0.8rem;
 }
 
-/* Step 25: Popular Post Link Styles */
-.popular-post a {
-  /* text-decoration: ; 
-    color: ; 
-    font-size: ; 
-    transition: ; */
+footer {
+  background: #1f1f1f;
+  padding: 20px;
+  color: #f2f2f2;
+  border-top: 1px solid #3b3b3b;
+  margin-top: auto;
 }
 
-/* Step 26: Popular Post Link Hover Styles */
-.popular-post a:hover {
-  /* color: ; */
+footer p {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #988581;
+  margin-top: 20px;
 }
 
-/* Footer Styling */
-/* Step 27: Footer Container Styles */
-.footer {
-  /* background-color: ; 
-    color: ; 
-    padding: ; 
-    margin-top: ; 
-    text-align: ; 
-    border-top: ; */
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Step 28: Footer Content Styles */
-.footer-content {
-  /* display: ; 
-    flex-wrap: ; 
-    justify-content: ; 
-    gap: ; 
-    max-width: ; 
-    margin: ; */
+.footer-item h4 {
+  color: #edad09;
 }
 
-/* Step 29: Footer Heading Styles */
-.footer-content h4 {
-  /* margin-bottom: ; 
-    color: ; */
-}
 
-/* Step 30: Footer Paragraph Styles */
-.footer p {
-  /* font-size: ; */
-}
-
-.footer p:last-child {
-  /* margin-top: ; 
-    color: ; */
-}
-
-/* Responsive Design */
-/* Step 31: Responsive Navbar Styles */
-@media (max-width: 768px) {
-  .navbar--container {
-    /* flex-direction: ; 
-      text-align: ; */
+/* Responsive Styling */
+@media (min-width: 768px) {
+  header nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
   }
 
-  .nav-links-container {
-    /* flex-direction: ; 
-      gap: ; */
+  .nav-links {
+    flex-direction: row;
+    gap: 20px;
   }
 
-  .header-banner-container h1 {
-    /* font-size: ; */
+  .hero {
+    text-align: left;
+    padding: 50px;
   }
 
-  .header-banner-container p {
-    /* font-size: ; */
+  .content-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px 50px;
   }
 
-  .main {
-    /* flex-direction: ; */
+  .article-container {
+    flex: 3;
   }
 
-  .main-posts article {
-    /* flex-direction: ; 
-      align-items: ; 
-      text-align: ; */
+  aside {
+    flex: 1;
   }
 
-  .main-posts article img {
-    /* width: ; 
-      height: ; */
-  }
-
-  .main-posts p {
-    /* font-size: ; */
+  .post-1 img,
+  .post-2 img {
+    height: 200px;
   }
 
   .footer-content {
-    /* flex-direction: ; 
-      text-align: ; */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .hero {
+    border-radius: 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .content-container {
+    gap: 20px;
+  }
+
+  .post-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .post-caption p {
+    font-size: 1rem;
+  }
+
+  .post-1, .post-2 {
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .post-1 img, .post-2 img {
+    width: 150px;
+    height: 140px;
+    border-radius: 0;
+  }
+
+  .post-header {
+    align-items: start;
+  }
+
+  .post-header h2 {
+    padding: 0;
+  }
+
+  .post-caption p {
+    text-align: left;
+    padding: 0;
+    padding-bottom: 50px;
+  }
+
+  .post-content {
+    padding: 20px 20px;
   }
 }
